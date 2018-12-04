@@ -38,7 +38,7 @@ def login():
 
 def geterrInfo(page):
     # 如果已经执行了login函数，则opener自动已经包含相应的cookie值
-    url = "http://eip.megmeet.com:8008/km/review/km_review_index/kmReviewIndex.do?method=list&q.mydoc=all&q.j_path=%2FlistAll&q.fdTemplate=1666236b6b0126bbc42394e49a8ae720&q.s_raq=0.006108134566174206&pageno={}&rowsize=30&orderby=docCreateTime&ordertype=down&s_ajax=true".format(page)
+    url = 'http://eip.megmeet.com:8008/km/review/km_review_index/kmReviewIndex.do?method=list&q.mydoc=all&q.j_path=%2FlistAll&q.fdTemplate=16536f378d40a2443214399422d9967d&q.s_raq=0.4209406993210796&pageno={}&rowsize=30&orderby=docCreateTime&ordertype=down&s_ajax=true'.format(page)
     # data={
     #     'method': 'list',
     #     'q.mydoc': 'all',
@@ -55,32 +55,38 @@ def geterrInfo(page):
     html = rsp.read().decode()
     result=json.loads(html)
 
-    with open('data.csv', 'a', encoding='utf-8') as file:
-        writer = csv.writer(file)
-        writer.writerow(['发起人', '申请编号', '机型料号', '机型名称', '托工单号', '工单数量', '物料料号', '投入数量', '不良数量', '问题描述', '原因分析', '临时措施', '围堵措施',
-             '永久措施', '效果确认','发起日期','责任人'])
+    # with open('data.csv', 'a', encoding='utf-8') as file:
+    #     writer = csv.writer(file)
+    #     writer.writerow(['发起人', '申请编号', '机型料号', '机型名称', '托工单号', '工单数量', '物料料号', '投入数量', '不良数量', '问题描述', '原因分析', '临时措施', '围堵措施',
+    #          '永久措施', '效果确认','发起日期','责任人'])
+    # number=[]       #编号
+    # po_date=[]      #评审时间
+    # po_end_date=[] #评审结束时间
+    # code=[]     #料号
+    # quarter=[]  #数量
+    # delivery_time=[] #交货时间
+    for i in  result['datas']:
+       fdId=i[0]['value']   #获取fdId用于next_url的get
+       number =i[2]['value']
+       docCreateTime=i[5]['value']
+       docPublishTime_time=i[7]['value']
+       print(number,docCreateTime,docPublishTime_time)
 
-        for i in  result['datas']:
-            fdId=i[0]['value']   #获取fdId用于next_url的get
-            docCreateTime_time=i[6]['value']
+       rsp = opener.open(next_url.format(fdId))
+       html = rsp.read().decode()
+       codeinfo = (etree.HTML(html).xpath('//table/tr/td/div/xformflag/text()'))
+       delivery_time=(etree.HTML(html).xpath('//table/tr/td/label/xformflag/text()'))
 
-            rsp = opener.open(next_url.format(fdId))
-            html = rsp.read().decode()
-            info=etree.HTML(html).xpath('//div[@class="xform_inputText"]//text()')
-            print(info)
-            info.append(docCreateTime_time)
-            responsibility = etree.HTML(html).xpath('//label/xformflag/text()')
 
-            print(responsibility)
-            #info.append(responsibility)
-            writer.writerow(info)   #加入信息
-            #writer.writerow(responsibility_department)
+       #responsibility = etree.HTML(html).xpath('//label[@class="xform_new_address"]/text()')
+       #info.append(responsibility)
+       #writer.writerow(info)   #加入信息
+       #writer.writerow(responsibility_department)
 
 if __name__ == '__main__':
     next_url = 'http://eip.megmeet.com:8008/km/review/km_review_main/kmReviewMain.do?method=view&fdId={}'
     login()
-
-    minpage=input('请输入最大页码:')
-    maxpage = input('请输入最大页码:')
+    minpage=input('请输入最小页码:')
+    maxpage=input('请输入最大页码:')
     for i in range(int(minpage),int(maxpage)+1):
         geterrInfo(i)
