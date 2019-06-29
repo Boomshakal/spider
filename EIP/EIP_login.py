@@ -27,7 +27,7 @@ def login():
     # 此键值需要从登录form的两个对应input中提取name属性
     data = {
         "j_username": "yhs375",
-        "j_password": "lhm9223572309"
+        "j_password": "lhm922357"
     }
     # 把数据进行编码
     data = parse.urlencode(data)

@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="42fbd727-5292-4602-a6fb-36268ac5ba6a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/EIP/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/EIP/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EIP/data.csv" beforeDir="false" afterPath="$PROJECT_DIR$/EIP/data.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/spider.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/spider.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -17,32 +19,7 @@
     <SUITE FILE_PATH="coverage/spider$jiepai.coverage" NAME="jiepai Coverage Results" MODIFIED="1545739405046" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/toutiao_jiepai" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/aiqiyi/aiqiyi_pinglun.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="437">
-              <caret line="23" column="27" selection-start-line="23" selection-start-column="27" selection-end-line="23" selection-end-column="27" />
-              <folding>
-                <element signature="e#0#11#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/toutiao_jiepai/jiepai.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="342">
-              <caret line="18" column="54" selection-start-line="18" selection-start-column="17" selection-end-line="18" selection-end-column="55" />
-              <folding>
-                <element signature="e#0#15#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -50,6 +27,14 @@
         <option value="Python Script" />
       </list>
     </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>(.*?):(.*)</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>'$1':'$2',</replace>
+    </replaceStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -60,14 +45,21 @@
         <option value="$PROJECT_DIR$/aiqiyi/aiqiyi_pinglun.py" />
         <option value="$PROJECT_DIR$/toutiao_jiepai/Pool_test.py" />
         <option value="$PROJECT_DIR$/toutiao_jiepai/jiepai.py" />
+        <option value="$PROJECT_DIR$/EIP/EIP_login.py" />
+        <option value="$PROJECT_DIR$/58zufang/spider.py" />
+        <option value="$PROJECT_DIR$/58zufang/test.py" />
+        <option value="$PROJECT_DIR$/58zufang/58.py" />
+        <option value="$PROJECT_DIR$/lagou/lagou.py" />
+        <option value="$PROJECT_DIR$/instagram/ins.py" />
+        <option value="$PROJECT_DIR$/vips/vip.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="546" />
-    <option name="y" value="116" />
-    <option name="width" value="1063" />
-    <option name="height" value="824" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="538" />
+    <option name="y" value="103" />
+    <option name="width" value="1307" />
+    <option name="height" value="1008" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -80,12 +72,7 @@
           <expand>
             <path>
               <item name="spider" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spider" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spider" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spider" type="462c0819:PsiDirectoryNode" />
-              <item name="toutiao_jiepai" type="462c0819:PsiDirectoryNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
             </path>
           </expand>
           <select />
@@ -96,7 +83,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../scrapy" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
@@ -113,8 +100,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.jiepai">
-    <configuration name="Pool_test" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python.vip">
+    <configuration name="12306" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="spider" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -122,12 +109,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/toutiao_jiepai" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/12306" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/toutiao_jiepai/Pool_test.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/12306/12306.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -136,7 +122,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="aiqiyi_pinglun" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="ins" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="spider" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -144,12 +130,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/aiqiyi" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/instagram" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/aiqiyi/aiqiyi_pinglun.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/instagram/ins.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -158,7 +143,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="jiepai" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="lagou" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="spider" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -166,12 +151,53 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/toutiao_jiepai" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/lagou" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/toutiao_jiepai/jiepai.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/lagou/lagou.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="test" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="spider" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/58zufang" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/58zufang/test.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="vip" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="spider" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/vips" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/vips/vip.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -182,9 +208,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.jiepai" />
-        <item itemvalue="Python.Pool_test" />
-        <item itemvalue="Python.aiqiyi_pinglun" />
+        <item itemvalue="Python.vip" />
+        <item itemvalue="Python.ins" />
+        <item itemvalue="Python.lagou" />
+        <item itemvalue="Python.12306" />
+        <item itemvalue="Python.test" />
       </list>
     </recent_temporary>
   </component>
@@ -207,15 +235,14 @@
     <option name="totallyTimeSpent" value="4643000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="28" width="1920" height="1052" extended-state="6" />
-    <editor active="true" />
+    <frame x="538" y="103" width="1307" height="1008" extended-state="0" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.45245728" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20187062" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32962587" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.29120323" />
       <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49893162" weight="0.2688985" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -224,7 +251,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50106835" side_tool="true" weight="0.2688985" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="11" visible="true" weight="0.32937366" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="11" visible="true" weight="0.34698522" />
       <window_info anchor="bottom" id="Python Console" order="12" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -237,32 +264,10 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/aiqiyi/aiqiyi_pinglun.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="437">
-          <caret line="23" column="27" selection-start-line="23" selection-start-column="27" selection-end-line="23" selection-end-column="27" />
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/toutiao_jiepai/img/4种超高回头率的圣诞搭配，想不脱单都难！/37f684450f8f2be21e03540340430a36.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/toutiao_jiepai/img/4种超高回头率的圣诞搭配，想不脱单都难！/3005eea71951b3350be86d24dc22d39a.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/toutiao_jiepai/img/4种超高回头率的圣诞搭配，想不脱单都难！/bbd98cfd5a08ec68f59b20ea627b06df.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$USER_HOME$/anaconda3/envs/spider/lib/python3.6/multiprocessing/pool.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3187">
-          <caret line="152" column="8" selection-start-line="152" selection-start-column="8" selection-end-line="152" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/toutiao_jiepai/img/4种超高回头率的圣诞搭配，想不脱单都难！/37f684450f8f2be21e03540340430a36.jpg" />
+    <entry file="file://$PROJECT_DIR$/toutiao_jiepai/img/4种超高回头率的圣诞搭配，想不脱单都难！/3005eea71951b3350be86d24dc22d39a.jpg" />
+    <entry file="file://$PROJECT_DIR$/toutiao_jiepai/img/4种超高回头率的圣诞搭配，想不脱单都难！/bbd98cfd5a08ec68f59b20ea627b06df.jpg" />
+    <entry file="file://$USER_HOME$/anaconda3/envs/spider/lib/python3.6/multiprocessing/pool.py" />
     <entry file="file://$PROJECT_DIR$/toutiao_jiepai/Pool_test.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="342">
@@ -273,15 +278,104 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/toutiao_jiepai/img/18岁以下禁止观看，美女太逗了，要笑死人了！/ecd37fea1117aa83d02357129aeaa8b8.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/toutiao_jiepai/img/18岁以下禁止观看，美女太逗了，要笑死人了！/ecd37fea1117aa83d02357129aeaa8b8.jpg" />
     <entry file="file://$PROJECT_DIR$/toutiao_jiepai/jiepai.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="18" column="54" selection-start-line="18" selection-start-column="17" selection-end-line="18" selection-end-column="55" />
+        <state relative-caret-position="57">
+          <caret line="3" column="8" selection-start-line="3" selection-start-column="8" selection-end-line="3" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/EIP/EIP_login.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="18" selection-start-line="18" selection-end-line="18" />
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/58zufang/58tz_no.woff" />
+    <entry file="file://$PROJECT_DIR$/58zufang/58tc.woff">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="4" column="61" lean-forward="true" selection-start-line="4" selection-start-column="61" selection-end-line="4" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/58zufang/spider.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="753">
+          <caret line="55" column="53" selection-start-line="55" selection-start-column="53" selection-end-line="55" selection-end-column="53" />
           <folding>
             <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/58zufang/test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="2" column="20" selection-start-line="2" selection-start-column="20" selection-end-line="2" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/12306/12306.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="545">
+          <caret line="205" selection-start-line="205" selection-end-line="205" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/aiqiyi/aiqiyi_pinglun.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="17" column="50" selection-start-line="17" selection-start-column="50" selection-end-line="17" selection-end-column="50" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lagou/lagou.py" />
+    <entry file="file://$PROJECT_DIR$/instagram/ins.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2356">
+          <caret line="124" column="48" selection-start-line="124" selection-start-column="48" selection-end-line="124" selection-end-column="48" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WeiboList/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor />
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/58zufang/58.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="65" column="22" selection-start-line="65" selection-start-column="22" selection-end-line="65" selection-end-column="22" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vips/vip.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="17" column="26" selection-start-line="17" selection-start-column="26" selection-end-line="17" selection-end-column="26" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
           </folding>
         </state>
       </provider>

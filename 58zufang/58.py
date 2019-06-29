@@ -44,13 +44,13 @@ def get_response():
     url='https://tz.58.com/chuzu/?PGTID=0d3090a7-0019-3300-4402-c37bdfa0779a'
     rsp = opener.open(url)
     html = rsp.read().decode()
-    print(html)
+    # print(html)
     return html
 
 
 def parse_font():
     font1 = TTFont('58tc.woff')
-    print(font1.getBestCmap())
+    # print(font1.getBestCmap())
     keys, values = [], []
     #dict = {}
     for k, v in font1.getBestCmap().items():
@@ -71,17 +71,17 @@ def parse_font():
 if __name__ == '__main__':
     #login()
     response=get_response()
-    # font_url = re.findall(r'src:url\((.*?)\)', response, re.S)[0]
-    # # print(font_url[1:-1])
-    # urlretrieve(font_url[1:-1], '58tz.woff')
-    #
-    # soup = BeautifulSoup(response, 'html.parser')
-    # datas = soup.find_all('ul',class_='listUl')
-    #
-    # for date in datas:
-    #     title = str(date.text).strip()
-    #     # keys, values = parse_font()
-    #     # for k, v in zip(keys, values):
-    #     #     title = title.replace(k, v)
-    #     print(title)
-    parse_font()
+    font_url = re.findall(r'src:url\((.*?)\)', response, re.S)[0]
+    # print(font_url[1:-1])
+    urlretrieve(font_url[1:-1], '58tz.woff')
+
+    soup = BeautifulSoup(response, 'html.parser')
+    datas = soup.find_all('ul',class_='listUl')
+
+    for date in datas:
+        title = str(date.text).strip()
+        keys, values = parse_font()
+        for k, v in zip(keys, values):
+            title = title.replace(k, v)
+        print(title)
+    # parse_font()
