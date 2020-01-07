@@ -19,7 +19,7 @@ def share(path,port):
 
 def exec_share(path,port):
     th=threading.Thread(target=share,args=(path,port,))
-    th.setDaemon(False)
+    th.setDaemon(True)
     th.start()
 
 def stop_server(server):
