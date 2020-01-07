@@ -3,13 +3,13 @@ import requests
 import html
 import re
 
-UserName = 'admin'
-PassWord = 'megmeet@p!@#$%8awdsz'
-
+USERNAME = 'admin'
+PASSWORD = 'megmeet@p!@#$%8awdsz'
+URL = 'http://122.226.143.230:8028/MesWebService.asmx'
 
 class Mes(object):
 
-    def save_post(self, url, xmlstr):
+    def SaveCheckData(self, xmlstr):
         headers = {
             'Host': '122.226.143.230:8028',
             'Content-Type': 'text/xml; charset=utf-8',
@@ -31,14 +31,14 @@ class Mes(object):
                       </soap:Body>
                     </soap:Envelope>
                 """
-        body = body.format(UserName=UserName, PassWord=PassWord, xmlstr=html.escape(xmlstr))
-        res = requests.post(url=url, data=body.encode(), headers=headers)
+        body = body.format(UserName=USERNAME, PassWord=PASSWORD, xmlstr=html.escape(xmlstr))
+        res = requests.post(url=URL, data=body.encode(), headers=headers)
 
         str = html.unescape(res.text)
         result = re.findall('<SaveCheckDataResult>(.*?)</SaveCheckDataResult>', str, re.S | re.M)
         return result[0]
 
-    def check_post(self, url, xmlstr):
+    def CheckBarcode(self, xmlstr):
         headers = {
             'Host': '122.226.143.230:8028',
             'Content-Type': 'text/xml; charset=utf-8',
@@ -61,21 +61,20 @@ class Mes(object):
                     </soap:Envelope>
                 """
 
-        body = body.format(UserName=UserName, PassWord=PassWord, xmlstr=html.escape(xmlstr))
-        res = requests.post(url=url, data=body.encode(), headers=headers)
+        body = body.format(UserName=USERNAME, PassWord=PASSWORD, xmlstr=html.escape(xmlstr))
+        res = requests.post(url=URL, data=body.encode(), headers=headers)
 
         str = html.unescape(res.text)
         result = re.findall('<CheckBarcodeResult>(.*?)</CheckBarcodeResult>', str, re.S | re.M)
         return result[0]
 
-    def get(self, url):
-        res = requests.get(url=url)
+    def get(self):
+        res = requests.get(url=URL)
 
         return res.text
 
 
 if __name__ == '__main__':
-    url = 'http://122.226.143.230:8028/MesWebService.asmx'
     '''
     Sequence = {
     'M081':'接地测试',
@@ -83,7 +82,7 @@ if __name__ == '__main__':
     'M083':'安规测试',        
     }
     
-    后台存储过程：p_fm_work_create_for_test
+    后台数据库存储过程：p_fm_work_create_for_test
     '''
     xmlstr = """
     <Parameters>
@@ -97,10 +96,10 @@ if __name__ == '__main__':
     """
 
     mes = Mes()
-    check_result = mes.check_post(url, xmlstr)
+    check_result = mes.CheckBarcode(xmlstr)
 
     if check_result == 'OK':
-        save_result = mes.save_post(url, xmlstr)
+        save_result = mes.SaveCheckData(xmlstr)
         print('save_result :', save_result)
     else:
         print('check_result :', check_result)
