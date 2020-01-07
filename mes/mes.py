@@ -17,20 +17,20 @@ class Mes(object):
             'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36'
         }
         body = """<?xml version="1.0" encoding="utf-8"?>
-<soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
-  <soap:Header>
-    <MySoapHeader xmlns="http://tempuri.org/">
-      <UserName>{UserName}</UserName>
-      <PassWord>{PassWord}</PassWord>
-    </MySoapHeader>
-  </soap:Header>
-  <soap:Body>
-    <SaveCheckData xmlns="http://tempuri.org/">
-      <xmlstr>{xmlstr}</xmlstr>
-    </SaveCheckData>
-  </soap:Body>
-</soap:Envelope>
-"""
+                    <soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+                      <soap:Header>
+                        <MySoapHeader xmlns="http://tempuri.org/">
+                          <UserName>{UserName}</UserName>
+                          <PassWord>{PassWord}</PassWord>
+                        </MySoapHeader>
+                      </soap:Header>
+                      <soap:Body>
+                        <SaveCheckData xmlns="http://tempuri.org/">
+                          <xmlstr>{xmlstr}</xmlstr>
+                        </SaveCheckData>
+                      </soap:Body>
+                    </soap:Envelope>
+                """
         body = body.format(UserName=UserName, PassWord=PassWord, xmlstr=html.escape(xmlstr))
         res = requests.post(url=url, data=body.encode(), headers=headers)
 
@@ -46,20 +46,20 @@ class Mes(object):
             'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36'
         }
         body = """<?xml version="1.0" encoding="utf-8"?>
-<soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
-  <soap:Header>
-    <MySoapHeader xmlns="http://tempuri.org/">
-      <UserName>{UserName}</UserName>
-      <PassWord>{PassWord}</PassWord>
-    </MySoapHeader>
-  </soap:Header>
-  <soap:Body>
-    <CheckBarcode xmlns="http://tempuri.org/">
-      <xmlstr>{xmlstr}</xmlstr>
-    </CheckBarcode>
-  </soap:Body>
-</soap:Envelope>
-        """
+                    <soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+                      <soap:Header>
+                        <MySoapHeader xmlns="http://tempuri.org/">
+                          <UserName>{UserName}</UserName>
+                          <PassWord>{PassWord}</PassWord>
+                        </MySoapHeader>
+                      </soap:Header>
+                      <soap:Body>
+                        <CheckBarcode xmlns="http://tempuri.org/">
+                          <xmlstr>{xmlstr}</xmlstr>
+                        </CheckBarcode>
+                      </soap:Body>
+                    </soap:Envelope>
+                """
 
         body = body.format(UserName=UserName, PassWord=PassWord, xmlstr=html.escape(xmlstr))
         res = requests.post(url=url, data=body.encode(), headers=headers)
