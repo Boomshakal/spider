@@ -51,4 +51,4 @@ class Viomi():
 if __name__ == '__main__':
     viomi = Viomi()
     # print(viomi.getdata(viomi.getuuid()))
-    print(viomi.postdata(viomi.getuuid()))
+    print(viomi.getdata(viomi.getuuid()))
