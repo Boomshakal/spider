@@ -112,7 +112,9 @@ if __name__ == '__main__':
     'M083':'安规测试',        
     }
     
-    后台数据库存储过程：p_fm_work_create_for_test
+    后台数据库存储过程：
+    p_fm_work_check_barcode_and
+    p_fm_work_create_for_test
     '''
     xmlstr = """
     <Parameters>
