@@ -2,7 +2,8 @@ import pymysql,pymssql
 from DBUtils.PooledDB import PooledDB
 from database.settings import MYSQL,MSSQL
 
-
+import sentry_sdk
+sentry_sdk.init("https://89f2e30912c64c1c8b4da5b739e706a8@sentry.io/1876964")
 class MysqlPool:
     config = {
         'creator': pymysql,
