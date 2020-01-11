@@ -3,8 +3,10 @@ from DBUtils.PooledDB import PooledDB
 from database.settings import MYSQL, MSSQL
 
 import sentry_sdk
+
 # sentry报错收集服务器
 sentry_sdk.init("https://89f2e30912c64c1c8b4da5b739e706a8@sentry.io/1876964")
+
 
 # 装饰器用于使用with开关调用__enter__ 和 __exit__
 def db_conn(func):
@@ -15,10 +17,11 @@ def db_conn(func):
 
     return wrapper
 
+
 # mssql 结果转换dict
 def get_dict(row_list, col_list):
     cols = [d[0] for d in col_list]
-    res_list=[]
+    res_list = []
     for row in row_list:
         res_list.append(dict(zip(cols, row)))  # 将两个列表合并成一个字典 dict(zip())方法
     return res_list
@@ -67,7 +70,7 @@ class DatabasePool(object):
     def ExecQuery(self, db, sql, *args, **kw):
         db.cursor.execute(sql)
         relist = db.cursor.fetchall()
-        if self.type =='mysql':
+        if self.type == 'mysql':
             return relist
         else:
             desc_res = db.cursor.description
