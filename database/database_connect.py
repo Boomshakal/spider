@@ -1,6 +1,6 @@
 import pymysql, pymssql
 from DBUtils.PooledDB import PooledDB
-from database.settings import MYSQL, MSSQL
+from settings import MYSQL, MSSQL
 
 import sentry_sdk
 
@@ -101,8 +101,12 @@ if __name__ == '__main__':
     #########
     ##mssql##
     #########
+    sql = '''
+    exec p_mm_wo_workshop_plan_get_items_finereport
+    
+    '''
     connect = DatabasePool('mssql')
-    lists = connect.ExecQuery('select top 5 * from mm_item')
+    lists = connect.ExecQuery(sql)
 
     for i in lists:
         print(i)
