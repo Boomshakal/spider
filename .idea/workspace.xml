@@ -2,12 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="42fbd727-5292-4602-a6fb-36268ac5ba6a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/aoxin/api.py" beforeDir="false" afterPath="$PROJECT_DIR$/aoxin/api.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zhonggong/spider.py" beforeDir="false" afterPath="$PROJECT_DIR$/zhonggong/spider.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/celery_task/pro_cel/celery_task/celerybeat-schedule.bak" beforeDir="false" afterPath="$PROJECT_DIR$/celery_task/pro_cel/celery_task/celerybeat-schedule.bak" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/celery_task/pro_cel/celery_task/celerybeat-schedule.dat" beforeDir="false" afterPath="$PROJECT_DIR$/celery_task/pro_cel/celery_task/celerybeat-schedule.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/celery_task/pro_cel/celery_task/celerybeat.pid" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/xiaohongshu/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/xiaohongshu/.idea/workspace.xml" afterDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -38,10 +38,16 @@
   </component>
   <component name="ProjectId" id="1UoVHnIwLsELjfCLtByPJrTMbcP" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Django/meiduo" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Django/luffy_boy" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -52,19 +58,29 @@
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
-  </component>
-  <component name="RunManager" selected="Python.api">
+  <component name="RunManager" selected="Python.111">
+    <configuration name="111" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="spider" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/aoxin" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/aoxin/111.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="api" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="spider" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -153,37 +169,27 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="vip" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="spider" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/vips" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/vips/vip.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.111" />
         <item itemvalue="Python.api" />
         <item itemvalue="Python.test" />
         <item itemvalue="Python.share" />
         <item itemvalue="Python.thread" />
-        <item itemvalue="Python.vip" />
       </list>
     </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -203,6 +209,8 @@
       <workItem from="1576051659275" duration="1875000" />
       <workItem from="1576110500254" duration="7756000" />
       <workItem from="1576140044664" duration="19000" />
+      <workItem from="1579155173129" duration="285000" />
+      <workItem from="1579155807462" duration="16000" />
     </task>
     <task id="LOCAL-00001" summary="share">
       <created>1576051721188</created>
@@ -234,10 +242,37 @@
     <MESSAGE value="share" />
     <option name="LAST_COMMIT_MESSAGE" value="share" />
   </component>
+  <component name="WindowStateProjectService">
+    <state x="634" y="216" key="FileChooserDialogImpl" timestamp="1579155822252">
+      <screen x="0" y="0" width="1707" height="920" />
+    </state>
+    <state x="634" y="216" key="FileChooserDialogImpl/0.0.1707.920@0.0.1707.920" timestamp="1579155822252" />
+    <state width="1663" height="270" key="GridCell.Tab.0.bottom" timestamp="1579155458325">
+      <screen x="0" y="0" width="1707" height="920" />
+    </state>
+    <state width="1663" height="270" key="GridCell.Tab.0.bottom/0.0.1707.920@0.0.1707.920" timestamp="1579155458325" />
+    <state width="1663" height="270" key="GridCell.Tab.0.center" timestamp="1579155458325">
+      <screen x="0" y="0" width="1707" height="920" />
+    </state>
+    <state width="1663" height="270" key="GridCell.Tab.0.center/0.0.1707.920@0.0.1707.920" timestamp="1579155458325" />
+    <state width="1663" height="270" key="GridCell.Tab.0.left" timestamp="1579155458324">
+      <screen x="0" y="0" width="1707" height="920" />
+    </state>
+    <state width="1663" height="270" key="GridCell.Tab.0.left/0.0.1707.920@0.0.1707.920" timestamp="1579155458324" />
+    <state width="1663" height="270" key="GridCell.Tab.0.right" timestamp="1579155458325">
+      <screen x="0" y="0" width="1707" height="920" />
+    </state>
+    <state width="1663" height="270" key="GridCell.Tab.0.right/0.0.1707.920@0.0.1707.920" timestamp="1579155458325" />
+    <state x="538" y="285" key="com.intellij.ide.util.TipDialog" timestamp="1579155806961">
+      <screen x="0" y="0" width="1707" height="920" />
+    </state>
+    <state x="538" y="285" key="com.intellij.ide.util.TipDialog/0.0.1707.920@0.0.1707.920" timestamp="1579155806961" />
+  </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/spider$api.coverage" NAME="api Coverage Results" MODIFIED="1576119666952" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/aoxin" />
+    <SUITE FILE_PATH="coverage/spider$111.coverage" NAME="111 Coverage Results" MODIFIED="1579155382044" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/aoxin" />
+    <SUITE FILE_PATH="coverage/spider$share.coverage" NAME="share Coverage Results" MODIFIED="1576045804376" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/share_tk" />
     <SUITE FILE_PATH="coverage/spider$test.coverage" NAME="test Coverage Results" MODIFIED="1576119220097" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/share_tk" />
     <SUITE FILE_PATH="coverage/spider$thread.coverage" NAME="thread Coverage Results" MODIFIED="1576044277390" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/share_tk" />
-    <SUITE FILE_PATH="coverage/spider$share.coverage" NAME="share Coverage Results" MODIFIED="1576045804376" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/share_tk" />
-    <SUITE FILE_PATH="coverage/spider$api.coverage" NAME="api Coverage Results" MODIFIED="1576119666952" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/aoxin" />
   </component>
 </project>
