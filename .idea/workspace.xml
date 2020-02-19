@@ -2,12 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="42fbd727-5292-4602-a6fb-36268ac5ba6a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/waimai/wx.waimai.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/aoxin/api.py" beforeDir="false" afterPath="$PROJECT_DIR$/aoxin/api.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zhonggong/spider.py" beforeDir="false" afterPath="$PROJECT_DIR$/zhonggong/spider.py" afterDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -38,7 +35,13 @@
   </component>
   <component name="ProjectId" id="1UoVHnIwLsELjfCLtByPJrTMbcP" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../Django/meiduo" />
@@ -50,21 +53,53 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
-  </component>
-  <component name="RunManager" selected="Python.api">
+  <component name="RunManager" selected="Python.wx.waimai">
+    <configuration name="000" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="spider" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/async_task" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/async_task/000.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="111" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="spider" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/async_task" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/async_task/111.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="api" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="spider" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -87,7 +122,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="share" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="express" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="spider" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -95,12 +130,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/share_tk" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/kuaidi100" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/share_tk/share.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/kuaidi100/express.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -109,7 +144,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="test" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="wx.waimai" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="spider" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -117,56 +152,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/share_tk" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/waimai" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/share_tk/test.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="thread" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="spider" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/share_tk" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/share_tk/thread.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="vip" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="spider" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/vips" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/vips/vip.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/waimai/wx.waimai.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -177,11 +168,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.wx.waimai" />
+        <item itemvalue="Python.express" />
+        <item itemvalue="Python.111" />
+        <item itemvalue="Python.000" />
         <item itemvalue="Python.api" />
-        <item itemvalue="Python.test" />
-        <item itemvalue="Python.share" />
-        <item itemvalue="Python.thread" />
-        <item itemvalue="Python.vip" />
       </list>
     </recent_temporary>
   </component>
@@ -203,6 +194,9 @@
       <workItem from="1576051659275" duration="1875000" />
       <workItem from="1576110500254" duration="7756000" />
       <workItem from="1576140044664" duration="19000" />
+      <workItem from="1582006977072" duration="1307000" />
+      <workItem from="1582008747428" duration="4592000" />
+      <workItem from="1582073216424" duration="1057000" />
     </task>
     <task id="LOCAL-00001" summary="share">
       <created>1576051721188</created>
@@ -211,7 +205,14 @@
       <option name="project" value="LOCAL" />
       <updated>1576051721188</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="express">
+      <created>1582016355912</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1582016355912</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -232,12 +233,55 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="share" />
-    <option name="LAST_COMMIT_MESSAGE" value="share" />
+    <MESSAGE value="express" />
+    <option name="LAST_COMMIT_MESSAGE" value="express" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="372" y="4" key="CommitChangelistDialog2" timestamp="1582016355012">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="372" y="4" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1582016355012" />
+    <state x="682" y="194" key="FileChooserDialogImpl" timestamp="1582007981708">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="682" y="194" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1582007981708" />
+    <state width="1493" height="226" key="GridCell.Tab.0.bottom" timestamp="1582016385229">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="226" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1582016385229" />
+    <state width="1493" height="226" key="GridCell.Tab.0.center" timestamp="1582016385229">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="226" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1582016385229" />
+    <state width="1493" height="226" key="GridCell.Tab.0.left" timestamp="1582016385229">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="226" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1582016385229" />
+    <state width="1493" height="226" key="GridCell.Tab.0.right" timestamp="1582016385229">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="226" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1582016385229" />
+    <state x="403" y="81" key="SettingsEditor" timestamp="1582008001252">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="403" y="81" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1582008001252" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1582016359505">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1582016359505" />
+    <state x="482" y="325" key="com.intellij.ide.util.TipDialog" timestamp="1582073216744">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="482" y="325" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1582073216744" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/spider$test.coverage" NAME="test Coverage Results" MODIFIED="1576119220097" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/share_tk" />
-    <SUITE FILE_PATH="coverage/spider$thread.coverage" NAME="thread Coverage Results" MODIFIED="1576044277390" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/share_tk" />
     <SUITE FILE_PATH="coverage/spider$share.coverage" NAME="share Coverage Results" MODIFIED="1576045804376" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/share_tk" />
+    <SUITE FILE_PATH="coverage/spider$thread.coverage" NAME="thread Coverage Results" MODIFIED="1576044277390" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/share_tk" />
+    <SUITE FILE_PATH="coverage/spider$express.coverage" NAME="express Coverage Results" MODIFIED="1582016128869" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/kuaidi100" />
+    <SUITE FILE_PATH="coverage/spider$test.coverage" NAME="test Coverage Results" MODIFIED="1576119220097" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/share_tk" />
+    <SUITE FILE_PATH="coverage/spider$000.coverage" NAME="000 Coverage Results" MODIFIED="1582008010464" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/async_task" />
+    <SUITE FILE_PATH="coverage/spider$111.coverage" NAME="111 Coverage Results" MODIFIED="1582008104451" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/async_task" />
     <SUITE FILE_PATH="coverage/spider$api.coverage" NAME="api Coverage Results" MODIFIED="1576119666952" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/aoxin" />
+    <SUITE FILE_PATH="coverage/spider$wx_waimai.coverage" NAME="wx.waimai Coverage Results" MODIFIED="1582074278391" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/waimai" />
   </component>
 </project>
