@@ -1,11 +1,15 @@
+import re
 import pymysql, pymssql
 from DBUtils.PooledDB import PooledDB
+from threading import Thread
+
 from settings import MYSQL, MSSQL
 
-import sentry_sdk
 
-# sentry报错收集服务器
-sentry_sdk.init("https://89f2e30912c64c1c8b4da5b739e706a8@sentry.io/1876964")
+# import sentry_sdk
+#
+# # sentry报错收集服务器
+# sentry_sdk.init("https://89f2e30912c64c1c8b4da5b739e706a8@sentry.io/1876964")
 
 
 # 装饰器用于使用with开关调用__enter__ 和 __exit__
@@ -16,6 +20,18 @@ def db_conn(func):
         return result
 
     return wrapper
+
+
+# Parameters格式化sql
+def format_sql(sql, p):
+    parames = []
+    if '@' in sql:
+        parames = re.findall(r'@\w+', sql)
+
+    for parame in parames:
+        sql = sql.replace(parame, "'" + str(p[parame[1:]]) + "'")
+
+    return sql
 
 
 # mssql 结果转换dict
@@ -39,7 +55,7 @@ class DatabasePool(object):
                 'passwd': MYSQL['PASSWD'],
                 'db': MYSQL['DB'],
                 'charset': MYSQL['CHARSET'],
-                'maxconnections': 70,  # 连接池最大连接数量
+                'maxconnections': 20,  # 连接池最大连接数量
                 'cursorclass': pymysql.cursors.DictCursor
             }
         else:
@@ -51,7 +67,7 @@ class DatabasePool(object):
                 'password': MSSQL['PASSWD'],
                 'database': MSSQL['DB'],
                 'charset': MSSQL['CHARSET'],
-                'maxconnections': 70,  # 连接池最大连接数量
+                'maxconnections': 20,  # 连接池最大连接数量
                 # 'cursorclass': pymysql.cursors.DictCursor
             }
         self.pool = PooledDB(**config)
@@ -67,7 +83,8 @@ class DatabasePool(object):
 
     # 查询sql
     @db_conn
-    def ExecQuery(self, db, sql, *args, **kw):
+    def ExecuteQuery(self, db, sql, p, *args, **kw):
+        sql = format_sql(sql, p)
         db.cursor.execute(sql)
         relist = db.cursor.fetchall()
         if self.type == 'mysql':
@@ -78,14 +95,31 @@ class DatabasePool(object):
 
     # 非查询的sql
     @db_conn
-    def ExecNoQuery(self, db, sql, *args, **kw):
+    def ExecuteNonQuery(self, db, sql, p, *args, **kw):
         try:
+            sql = format_sql(sql, p)
             db.cursor.execute(sql)
             db.conn.commit()
             print("执行成功！")
         except Exception as e:
             db.conn.rollback()
             print(e)
+
+    @db_conn
+    def ExecuteQueryAsync(self, db, sql, p, *args, **kwargs):
+        thread = Thread(target=self.ExecuteQuery, args=(sql, p))
+        thread.start()
+
+    @db_conn
+    def ExecuteNonQueryAsync(self, db, sql, p, *args, **kwargs):
+        thread = Thread(target=self.ExecuteNonQuery, args=(sql, p))
+        thread.start()
+
+
+class Parameters(dict):
+    def add(self, key, value):
+        self.__setitem__(key, value)
+        return self
 
 
 if __name__ == '__main__':
@@ -102,13 +136,17 @@ if __name__ == '__main__':
     ##mssql##
     #########
     sql = '''
-    exec p_mm_wo_workshop_plan_get_items_finereport
-    
+    update mm_item
+    set name=''
+    where id = @id
     '''
-    connect = DatabasePool('mssql')
-    lists = connect.ExecQuery(sql)
 
-    for i in lists:
-        print(i)
+    p = Parameters().add('id', 8760)
+
+    connect = DatabasePool('mssql')
+    lists = connect.ExecuteNonQueryAsync(sql, p)
+
+    # for i in lists:
+    #     print(i)
 
     # connect.ExecNoQuery('update mm_item set category_id=12  where id = 1')

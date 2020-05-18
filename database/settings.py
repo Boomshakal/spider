@@ -7,20 +7,20 @@ MYSQL = {
     'CHARSET': 'utf8'
 }
 
-# MSSQL = {
-#     'HOST': '192.168.0.126',
-#     'PORT': 1434,
-#     'USER': 'sa',
-#     'PASSWD': '2018@Ikahe',
-#     'DB': 'X1_CORE_PROD',
-#     'CHARSET': 'utf8'
-# }
-
 MSSQL = {
-    'HOST': '192.168.0.128',
+    'HOST': '192.168.0.126',
     'PORT': 1434,
     'USER': 'sa',
-    'PASSWD': 'Yh2017',
-    'DB': 'DB_YH01',
+    'PASSWD': '2018@Ikahe',
+    'DB': 'X1_CORE_PROD',
     'CHARSET': 'utf8'
 }
+
+# MSSQL = {
+#     'HOST': '192.168.0.128',
+#     'PORT': 1434,
+#     'USER': 'sa',
+#     'PASSWD': 'Yh2017',
+#     'DB': 'DB_YH01',
+#     'CHARSET': 'utf8'
+# }
