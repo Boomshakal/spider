@@ -1,16 +1,16 @@
 import re
-import pymysql, pymssql
-from DBUtils.PooledDB import PooledDB
 from threading import Thread
 
-from settings import MYSQL, MSSQL
+import pymssql
+import pymysql
+from DBUtils.PooledDB import PooledDB
 
+from settings import MYSQL, MSSQL
 
 # import sentry_sdk
 #
 # # sentry报错收集服务器
 # sentry_sdk.init("https://89f2e30912c64c1c8b4da5b739e706a8@sentry.io/1876964")
-
 
 # 装饰器用于使用with开关调用__enter__ 和 __exit__
 def db_conn(func):
@@ -30,7 +30,7 @@ def format_sql(sql, p):
 
     for parame in parames:
         sql = sql.replace(parame, "'" + str(p[parame[1:]]) + "'")
-
+    # print(sql)
     return sql
 
 
@@ -84,14 +84,19 @@ class DatabasePool(object):
     # 查询sql
     @db_conn
     def ExecuteQuery(self, db, sql, p, *args, **kw):
-        sql = format_sql(sql, p)
-        db.cursor.execute(sql)
-        relist = db.cursor.fetchall()
-        if self.type == 'mysql':
-            return relist
-        else:
-            desc_res = db.cursor.description
-            return get_dict(relist, desc_res)
+        try:
+            sql = format_sql(sql, p)
+            db.cursor.execute(sql)
+            relist = db.cursor.fetchall()
+            db.conn.commit()
+            if self.type == 'mysql':
+                return relist
+            else:
+                desc_res = db.cursor.description
+                return get_dict(relist, desc_res)
+        except Exception as e:
+            db.conn.rollback()
+            print(e)
 
     # 非查询的sql
     @db_conn
@@ -107,19 +112,39 @@ class DatabasePool(object):
 
     @db_conn
     def ExecuteQueryAsync(self, db, sql, p, *args, **kwargs):
-        thread = Thread(target=self.ExecuteQuery, args=(sql, p))
+        thread = SqlThread(self.ExecuteQuery, args=(sql, p))
         thread.start()
+        thread.join()
+        return thread.getResult()
 
     @db_conn
     def ExecuteNonQueryAsync(self, db, sql, p, *args, **kwargs):
-        thread = Thread(target=self.ExecuteNonQuery, args=(sql, p))
+        thread = SqlThread(self.ExecuteNonQuery, args=(sql, p))
         thread.start()
+        thread.join()
+        # return thread.getResult()
 
 
 class Parameters(dict):
     def add(self, key, value):
         self.__setitem__(key, value)
         return self
+
+
+class SqlThread(Thread):
+    def __init__(self, func, args=()):
+        super(SqlThread, self).__init__()
+        self.func = func
+        self.args = args
+
+    def run(self):
+        self.res = self.func(*self.args)
+
+    def getResult(self):
+        try:
+            return self.res
+        except Exception as e:
+            print(e)
 
 
 if __name__ == '__main__':
@@ -137,16 +162,13 @@ if __name__ == '__main__':
     #########
     sql = '''
     update mm_item
-    set name=''
-    where id = @id
+    set name = ''
+    where id=@id
+    select * from mm_item where id=@id
     '''
 
     p = Parameters().add('id', 8760)
 
     connect = DatabasePool('mssql')
-    lists = connect.ExecuteNonQueryAsync(sql, p)
-
-    # for i in lists:
-    #     print(i)
-
-    # connect.ExecNoQuery('update mm_item set category_id=12  where id = 1')
+    lists = connect.ExecuteQueryAsync(sql, p)
+    print(lists)
