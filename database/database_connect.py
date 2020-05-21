@@ -7,6 +7,7 @@ from DBUtils.PooledDB import PooledDB
 
 from settings import MYSQL, MSSQL
 
+
 # import sentry_sdk
 #
 # # sentry报错收集服务器
@@ -83,7 +84,7 @@ class DatabasePool(object):
 
     # 查询sql
     @db_conn
-    def ExecuteQuery(self, db, sql, p, *args, **kw):
+    def ExecuteQuery(self, db, sql, p, *args, **kwargs):
         try:
             sql = format_sql(sql, p)
             db.cursor.execute(sql)
@@ -100,7 +101,7 @@ class DatabasePool(object):
 
     # 非查询的sql
     @db_conn
-    def ExecuteNonQuery(self, db, sql, p, *args, **kw):
+    def ExecuteNonQuery(self, db, sql, p, *args, **kwargs):
         try:
             sql = format_sql(sql, p)
             db.cursor.execute(sql)
