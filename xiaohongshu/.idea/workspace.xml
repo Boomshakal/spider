@@ -2,10 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b7af5822-8238-4d56-bfef-48bed699a763" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../celery_task/pro_cel/celery_task/celerybeat-schedule.bak" beforeDir="false" afterPath="$PROJECT_DIR$/../celery_task/pro_cel/celery_task/celerybeat-schedule.bak" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../celery_task/pro_cel/celery_task/celerybeat-schedule.dat" beforeDir="false" afterPath="$PROJECT_DIR$/../celery_task/pro_cel/celery_task/celerybeat-schedule.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../celery_task/pro_cel/celery_task/celerybeat.pid" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../go_to_where/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../go_to_where/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kuaidi100/.idea/kuaidi100.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../kuaidi100/.idea/kuaidi100.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kuaidi100/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../kuaidi100/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/xiaohongshu.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/xiaohongshu.iml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,13 +21,13 @@
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../zhilian" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RunManager">
@@ -57,18 +59,6 @@
       </list>
     </recent_temporary>
   </component>
-  <component name="ServiceViewManager">
-    <option name="viewStates">
-      <list>
-        <serviceView>
-          <treeState>
-            <expand />
-            <select />
-          </treeState>
-        </serviceView>
-      </list>
-    </option>
-  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -81,6 +71,7 @@
       <updated>1561794621810</updated>
       <workItem from="1579144437888" duration="499000" />
       <workItem from="1579155144862" duration="25000" />
+      <workItem from="1593396939837" duration="62000" />
     </task>
     <task id="LOCAL-00001" summary="rename">
       <created>1561794696452</created>
@@ -93,39 +84,39 @@
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="2" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="rename" />
     <option name="LAST_COMMIT_MESSAGE" value="rename" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="1269" y="331" key="FileChooserDialogImpl" timestamp="1579155168619">
-      <screen x="0" y="0" width="1707" height="920" />
+    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1593397000348">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="1269" y="331" key="FileChooserDialogImpl/0.0.1707.920@0.0.1707.920" timestamp="1579155168619" />
-    <state width="1663" height="315" key="GridCell.Tab.0.bottom" timestamp="1579144938668">
-      <screen x="0" y="0" width="1707" height="920" />
+    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1593397000348" />
+    <state width="1493" height="203" key="GridCell.Tab.0.bottom" timestamp="1593397001358">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1663" height="315" key="GridCell.Tab.0.bottom/0.0.1707.920@0.0.1707.920" timestamp="1579144938668" />
-    <state width="1663" height="315" key="GridCell.Tab.0.center" timestamp="1579144938668">
-      <screen x="0" y="0" width="1707" height="920" />
+    <state width="1493" height="203" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1593397001358" />
+    <state width="1493" height="203" key="GridCell.Tab.0.center" timestamp="1593397001358">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1663" height="315" key="GridCell.Tab.0.center/0.0.1707.920@0.0.1707.920" timestamp="1579144938668" />
-    <state width="1663" height="315" key="GridCell.Tab.0.left" timestamp="1579144938668">
-      <screen x="0" y="0" width="1707" height="920" />
+    <state width="1493" height="203" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1593397001358" />
+    <state width="1493" height="203" key="GridCell.Tab.0.left" timestamp="1593397001358">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1663" height="315" key="GridCell.Tab.0.left/0.0.1707.920@0.0.1707.920" timestamp="1579144938668" />
-    <state width="1663" height="315" key="GridCell.Tab.0.right" timestamp="1579144938668">
-      <screen x="0" y="0" width="1707" height="920" />
+    <state width="1493" height="203" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1593397001358" />
+    <state width="1493" height="203" key="GridCell.Tab.0.right" timestamp="1593397001358">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1663" height="315" key="GridCell.Tab.0.right/0.0.1707.920@0.0.1707.920" timestamp="1579144938668" />
-    <state x="538" y="285" key="com.intellij.ide.util.TipDialog" timestamp="1579155144687">
-      <screen x="0" y="0" width="1707" height="920" />
+    <state width="1493" height="203" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1593397001358" />
+    <state x="270" y="57" key="SettingsEditor" timestamp="1593396958080">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="538" y="285" key="com.intellij.ide.util.TipDialog/0.0.1707.920@0.0.1707.920" timestamp="1579155144687" />
+    <state x="270" y="57" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1593396958079" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/xiaohongshu$xiaohongshu.coverage" NAME="xiaohongshu Coverage Results" MODIFIED="1579144916950" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/xiaohongshu$xiaohongshu.coverage" NAME="xiaohongshu Coverage Results" MODIFIED="1593396964079" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

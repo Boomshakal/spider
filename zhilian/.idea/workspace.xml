@@ -2,76 +2,34 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cd3af0cb-5406-4292-8685-40ba194d84a4" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/spider.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/spider.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../58zufang/58.py" beforeDir="false" afterPath="$PROJECT_DIR$/../58zufang/58.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../58zufang/58tc.woff" beforeDir="false" afterPath="$PROJECT_DIR$/../58zufang/58tc.woff" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../58zufang/58tz.woff" beforeDir="false" afterPath="$PROJECT_DIR$/../58zufang/58tz.woff" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../EIP/EIP_login.py" beforeDir="false" afterPath="$PROJECT_DIR$/../EIP/EIP_login.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../EIP/data.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../go_to_where/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../go_to_where/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kuaidi100/.idea/kuaidi100.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../kuaidi100/.idea/kuaidi100.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kuaidi100/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../kuaidi100/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../xiaohongshu/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../xiaohongshu/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../xiaohongshu/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../xiaohongshu/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../xiaohongshu/.idea/xiaohongshu.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../xiaohongshu/.idea/xiaohongshu.iml" afterDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="450" />
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
-  <component name="IdeDocumentHistory">
-    <option name="CHANGED_PATHS">
-      <list>
-        <option value="$PROJECT_DIR$/zhaopin.py" />
-      </list>
-    </option>
-  </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="29" />
-    <option name="y" value="272" />
-    <option name="width" value="2550" />
-    <option name="height" value="1054" />
-  </component>
+  <component name="ProjectId" id="1dyUoaZXqbbWgVEZJgBqaZwYOam" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
-  <component name="ProjectView">
-    <navigator proportions="" version="1">
-      <foldersAlwaysOnTop value="true" />
-    </navigator>
-    <panes>
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="zhilian" type="b2602c69:ProjectViewProjectNode" />
-              <item name="zhilian" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="Scope" />
-    </panes>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+    <option name="showMembers" value="true" />
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../scrapy/zhilian" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../zhonggong" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
-  </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
   </component>
   <component name="RunManager">
     <configuration name="zhaopin" type="PythonConfigurationType" factoryName="Python" temporary="true">
@@ -86,6 +44,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/zhaopin.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
@@ -111,42 +70,17 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1560426309691</updated>
+      <workItem from="1593397002566" duration="23000" />
     </task>
     <servers />
   </component>
-  <component name="ToolWindowManager">
-    <frame x="0" y="34" width="2560" height="1406" extended-state="6" />
-    <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24980205" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.41243863" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="GraphQL" order="7" />
-      <window_info anchor="bottom" id="Version Control" order="8" />
-      <window_info anchor="bottom" id="Terminal" order="9" />
-      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Python Console" order="11" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-    </layout>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
   </component>
-  <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/zhaopin.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="667">
-          <caret line="23" column="18" lean-forward="true" selection-start-line="23" selection-start-column="18" selection-end-line="23" selection-end-column="18" />
-          <folding>
-            <element signature="e#0#10#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+  <component name="WindowStateProjectService">
+    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1593397024483">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1593397024483" />
   </component>
 </project>
