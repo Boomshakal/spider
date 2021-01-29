@@ -11,6 +11,7 @@ method = '''express.info.get'''
 ts = int(time.time())
 appKey = '''c9277da6014e6d40c5e9b31a649ba710984ac9bc'''
 
+print(str(ts))
 signStr = appId + method + str(ts) + appKey
 sign = hashlib.md5(signStr.encode('utf8')).hexdigest()
 
